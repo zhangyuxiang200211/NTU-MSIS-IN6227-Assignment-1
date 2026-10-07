@@ -1,0 +1,71 @@
+{
+  "model": "decision_tree",
+  "seed": 42,
+  "folds": 5,
+  "n_jobs": -1,
+  "requested_candidates": 24,
+  "evaluated_candidates": 24,
+  "selection_metric": "average_precision",
+  "parameter_space": {
+    "model__criterion": [
+      "gini",
+      "entropy"
+    ],
+    "model__max_depth": [
+      null,
+      4,
+      8,
+      12,
+      20
+    ],
+    "model__min_samples_split": [
+      2,
+      10,
+      30
+    ],
+    "model__min_samples_leaf": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "model__class_weight": [
+      null,
+      "balanced"
+    ],
+    "model__ccp_alpha": [
+      0.0,
+      0.0001,
+      0.001
+    ]
+  },
+  "best_params": {
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 20,
+    "model__max_depth": 8,
+    "model__criterion": "gini",
+    "model__class_weight": null,
+    "model__ccp_alpha": 0.0
+  },
+  "best_cv_average_precision": 0.6621994490025683,
+  "cv_note": "Selection CV; not an unbiased post-tuning performance estimate. Summary std uses ddof=1; sklearn cv_results std uses ddof=0.",
+  "prediction_rule": "estimator.predict; probability ties select class 0",
+  "positive_class": "yes=1",
+  "confusion_matrix_order": [
+    "no",
+    "yes"
+  ],
+  "train_path": "F:\\NTU Python\\IN6227\\IN6227-Assignment-1\\data\\train.csv",
+  "train_sha256": "5211257faf4212e248fb5661b3bfa1a639bfb4c54a646619c4d906a3e1cfa0a2",
+  "train_rows": 31112,
+  "labeled_train_rows": 31109,
+  "missing_train_targets_excluded": 3,
+  "test_evaluated": false,
+  "versions": {
+    "python": "3.10.1",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "joblib": "1.6.0"
+  }
+}

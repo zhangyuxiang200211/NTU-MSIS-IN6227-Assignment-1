@@ -1,0 +1,13 @@
+Fitting 5 folds for each of 24 candidates, totalling 120 fits
+Best parameters: {'model__min_samples_split': 2, 'model__min_samples_leaf': 20, 'model__max_depth': 8, 'model__criterion': 'gini', 'model__class_weight': None, 'model__ccp_alpha': 0.0}
+Selection CV (mean and sample std):
+                    mean    std
+metric                         
+average_precision 0.6622 0.0111
+roc_auc           0.8708 0.0014
+accuracy          0.8274 0.0040
+balanced_accuracy 0.7456 0.0146
+precision         0.6589 0.0273
+recall            0.5883 0.0457
+f1                0.6199 0.0173
+Test set was not read. Add --evaluate-test for final evaluation.

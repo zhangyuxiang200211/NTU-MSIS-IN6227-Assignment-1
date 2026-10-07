@@ -1,0 +1,356 @@
+{
+  "notes": [
+    "Row indices are zero-based CSV record positions.",
+    "Counts follow whitespace trimming; blanks alone are missing.",
+    "Unknown and Other remain ordinary categories.",
+    "IQR flags and correlations are diagnostic; no records/features are removed.",
+    "No imputers, encoders or scalers are fitted by this script."
+  ],
+  "train_path": "F:\\NTU Python\\IN6227\\IN6227-Assignment-1\\data\\train.csv",
+  "train": {
+    "rows": 31112,
+    "columns": 16,
+    "feature_count": 15,
+    "numeric_feature_count": 7,
+    "categorical_feature_count": 8,
+    "missing_by_column": {
+      "geological_era": 2,
+      "weather_pattern": 3,
+      "region": 4,
+      "aptitude_score": 4,
+      "performance_score": 2,
+      "stability_index": 2,
+      "personal_interest": 6,
+      "load_ratio": 2,
+      "brew_preference": 7,
+      "instrument": 3,
+      "species": 3,
+      "index_weight": 3,
+      "mineral_type": 3,
+      "activity_duration": 2,
+      "composite_rank": 1,
+      "label": 3
+    },
+    "missing_feature_cells": 47,
+    "rows_with_missing_features": 47,
+    "missing_label_rows": 3,
+    "labeled_rows": 31109,
+    "missing_label_row_indices": [
+      212,
+      19726,
+      29234
+    ],
+    "duplicate_rows_beyond_first": 0,
+    "duplicate_feature_rows_beyond_first": 0,
+    "label_counts": {
+      "no": 23645,
+      "yes": 7464
+    },
+    "label_proportions": {
+      "no": 0.7600694332829728,
+      "yes": 0.23993056671702723
+    },
+    "numeric_summary_all_train_rows": {
+      "aptitude_score": {
+        "count": 31108.0,
+        "mean": 342.1344795550984,
+        "std": 68.92508988459974,
+        "min": 90.0,
+        "25%": 310.5975,
+        "50%": 333.515,
+        "75%": 402.5625,
+        "max": 510.0
+      },
+      "performance_score": {
+        "count": 31110.0,
+        "mean": 296.49272645451623,
+        "std": 187.62035706419599,
+        "min": 0.0,
+        "25%": 146.5725,
+        "50%": 275.385,
+        "75%": 420.17,
+        "max": 1010.0
+      },
+      "stability_index": {
+        "count": 31110.0,
+        "mean": 3.1564258437801347,
+        "std": 0.849307128860213,
+        "min": 0.0,
+        "25%": 2.751,
+        "50%": 3.351,
+        "75%": 3.76175,
+        "max": 4.625
+      },
+      "load_ratio": {
+        "count": 31110.0,
+        "mean": 24.422677402764386,
+        "std": 9.920133152161371,
+        "min": 0.0,
+        "25%": 19.272,
+        "50%": 23.689,
+        "75%": 27.65675,
+        "max": 143.717
+      },
+      "index_weight": {
+        "count": 31109.0,
+        "mean": 12.721826481082644,
+        "std": 7.747198308158069,
+        "min": 0.0,
+        "25%": 7.52,
+        "50%": 11.73,
+        "75%": 16.23,
+        "max": 99.62
+      },
+      "activity_duration": {
+        "count": 31110.0,
+        "mean": 80.36061780777884,
+        "std": 25.51507972007513,
+        "min": 0.0,
+        "25%": 72.74,
+        "50%": 80.33,
+        "75%": 90.25750000000001,
+        "max": 205.0
+      },
+      "composite_rank": {
+        "count": 31111.0,
+        "mean": 3.2387707884671015,
+        "std": 0.8697835567352963,
+        "min": 0.589,
+        "25%": 2.591,
+        "50%": 3.199,
+        "75%": 3.838,
+        "max": 6.876
+      }
+    },
+    "numeric_skewness": {
+      "aptitude_score": -0.2917548055571859,
+      "performance_score": 0.5523219036131227,
+      "stability_index": -1.2293277014158863,
+      "load_ratio": 1.705031149053427,
+      "index_weight": 1.5112255303444913,
+      "activity_duration": 0.19918286579107353,
+      "composite_rank": 0.2575607048654435
+    },
+    "numeric_zero_counts": {
+      "aptitude_score": 0,
+      "performance_score": 265,
+      "stability_index": 265,
+      "load_ratio": 38,
+      "index_weight": 4,
+      "activity_duration": 38,
+      "composite_rank": 0
+    },
+    "categorical_counts": {
+      "geological_era": {
+        "Triassic": 26642,
+        "Jurassic": 2934,
+        "Devonian": 984,
+        "Cambrian": 298,
+        "Permian": 252
+      },
+      "weather_pattern": {
+        "Monsoon": 14274,
+        "Heatwave": 10251,
+        "Blizzard": 4191,
+        "Fog": 987,
+        "Frost": 978,
+        "Drizzle": 404,
+        "Typhoon": 24
+      },
+      "region": {
+        "Texas": 27915,
+        "Arizona": 608,
+        "Wyoming": 553,
+        "Other": 532,
+        "South-Dakota": 178,
+        "Oregon": 131,
+        "Vermont": 128,
+        "Kentucky": 123,
+        "Rhode-Island": 95,
+        "Wisconsin": 92,
+        "Nevada": 82,
+        "Connecticut": 81,
+        "Idaho": 81,
+        "Tennessee": 78,
+        "Georgia": 76,
+        "Virginia": 67,
+        "Arkansas": 65,
+        "Iowa": 61,
+        "Missouri": 59,
+        "West-Virginia": 54,
+        "Nebraska": 49
+      },
+      "personal_interest": {
+        "Astronomy": 3965,
+        "Beekeeping": 3955,
+        "Falconry": 3877,
+        "Archery": 3559,
+        "Calligraphy": 3443,
+        "Kite-flying": 3154,
+        "Other": 2636,
+        "Glassblowing": 1925,
+        "Unknown": 1767,
+        "Foraging": 1481,
+        "Fencing": 1344
+      },
+      "brew_preference": {
+        "Espresso": 20777,
+        "Latte": 10328
+      },
+      "instrument": {
+        "Cello": 12573,
+        "Oboe": 8065,
+        "Dulcimer": 4780,
+        "Theremin": 3236,
+        "Zither": 1491,
+        "Sitar": 964
+      },
+      "species": {
+        "Lynx": 21723,
+        "Heron": 2449,
+        "Orca": 1948,
+        "Unknown": 1760,
+        "Viper": 1230,
+        "Bison": 1080,
+        "Other": 919
+      },
+      "mineral_type": {
+        "Marble": 10077,
+        "Opal": 6892,
+        "Sapphire": 5122,
+        "Ruby": 1668,
+        "Granite": 1312,
+        "Onyx": 1156,
+        "Quartz": 999,
+        "Obsidian": 873,
+        "Shale": 607,
+        "Emerald": 561,
+        "Basalt": 493,
+        "Jasper": 444,
+        "Diamond": 385,
+        "Slate": 319,
+        "Flint": 154,
+        "Chalk": 47
+      }
+    },
+    "iqr_diagnostics": {
+      "aptitude_score": {
+        "lower": 172.65000000000006,
+        "upper": 540.51,
+        "flagged_rows": 617
+      },
+      "performance_score": {
+        "lower": -263.82375,
+        "upper": 830.5662500000001,
+        "flagged_rows": 154
+      },
+      "stability_index": {
+        "lower": 1.2348749999999995,
+        "upper": 5.277875000000001,
+        "flagged_rows": 1128
+      },
+      "load_ratio": {
+        "lower": 6.694874999999998,
+        "upper": 40.233875,
+        "flagged_rows": 2527
+      },
+      "index_weight": {
+        "lower": -5.545000000000002,
+        "upper": 29.295,
+        "flagged_rows": 1017
+      },
+      "activity_duration": {
+        "lower": 46.463749999999976,
+        "upper": 116.53375000000003,
+        "flagged_rows": 5350
+      },
+      "composite_rank": {
+        "lower": 0.7205000000000004,
+        "upper": 5.7085,
+        "flagged_rows": 115
+      }
+    },
+    "numeric_pearson_correlation": {
+      "aptitude_score": {
+        "aptitude_score": 1.0,
+        "performance_score": 0.03588505365603429,
+        "stability_index": 0.12835467948417878,
+        "load_ratio": -0.5040845682094999,
+        "index_weight": -0.03887055359028015,
+        "activity_duration": 0.14296117349545845,
+        "composite_rank": 0.5064597443526171
+      },
+      "performance_score": {
+        "aptitude_score": 0.03588505365603429,
+        "performance_score": 1.0,
+        "stability_index": 0.891101246375025,
+        "load_ratio": 0.06887438410689802,
+        "index_weight": -0.06937790764239092,
+        "activity_duration": 0.07045293238263949,
+        "composite_rank": 0.8799065273536937
+      },
+      "stability_index": {
+        "aptitude_score": 0.12835467948417878,
+        "performance_score": 0.891101246375025,
+        "stability_index": 1.0,
+        "load_ratio": 0.14492689505060247,
+        "index_weight": -0.05610497127604682,
+        "activity_duration": 0.22277145293245987,
+        "composite_rank": 0.8298856273919546
+      },
+      "load_ratio": {
+        "aptitude_score": -0.5040845682094999,
+        "performance_score": 0.06887438410689802,
+        "stability_index": 0.14492689505060247,
+        "load_ratio": 1.0,
+        "index_weight": 0.020866588999028584,
+        "activity_duration": 0.7172778470692872,
+        "composite_rank": -0.18025051636162487
+      },
+      "index_weight": {
+        "aptitude_score": -0.03887055359028015,
+        "performance_score": -0.06937790764239092,
+        "stability_index": -0.05610497127604682,
+        "load_ratio": 0.020866588999028584,
+        "index_weight": 1.0,
+        "activity_duration": -0.018126310343983064,
+        "composite_rank": -0.07853875063612276
+      },
+      "activity_duration": {
+        "aptitude_score": 0.14296117349545845,
+        "performance_score": 0.07045293238263949,
+        "stability_index": 0.22277145293245987,
+        "load_ratio": 0.7172778470692872,
+        "index_weight": -0.018126310343983064,
+        "activity_duration": 1.0,
+        "composite_rank": 0.12873642202279015
+      },
+      "composite_rank": {
+        "aptitude_score": 0.5064597443526171,
+        "performance_score": 0.8799065273536937,
+        "stability_index": 0.8298856273919546,
+        "load_ratio": -0.18025051636162487,
+        "index_weight": -0.07853875063612276,
+        "activity_duration": 0.12873642202279015,
+        "composite_rank": 1.0
+      }
+    },
+    "high_correlation_pairs": [
+      {
+        "feature_1": "performance_score",
+        "feature_2": "stability_index",
+        "correlation": 0.891101246375025
+      },
+      {
+        "feature_1": "performance_score",
+        "feature_2": "composite_rank",
+        "correlation": 0.8799065273536937
+      },
+      {
+        "feature_1": "stability_index",
+        "feature_2": "composite_rank",
+        "correlation": 0.8298856273919546
+      }
+    ]
+  }
+}

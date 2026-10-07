@@ -1,0 +1,40 @@
+{
+  "model": "decision_tree",
+  "source_run": "F:\\NTU Python\\IN6227\\IN6227-Assignment-1\\outputs\\decision_tree\\20261005T063807_780755Z",
+  "model_path": "F:\\NTU Python\\IN6227\\IN6227-Assignment-1\\outputs\\decision_tree\\20261005T063807_780755Z\\best_pipeline.joblib",
+  "model_sha256": "e86e7368adf71199f83c2c52cb34ff9cb5bdb4e5b706ee7f44c3542233bf36ae",
+  "source_experiment_sha256": "7dcb9191aadf5ec48ea5746b1dec35f6736e65e6f904af4e2fc22998290a925f",
+  "best_params": {
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 20,
+    "model__max_depth": 8,
+    "model__criterion": "gini",
+    "model__class_weight": null,
+    "model__ccp_alpha": 0.0
+  },
+  "training_versions": {
+    "python": "3.10.1",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "joblib": "1.6.0"
+  },
+  "test_path": "F:\\NTU Python\\IN6227\\IN6227-Assignment-1\\data\\test.csv",
+  "test_sha256": "eee9de74f74357ad72848b36e8c34f09ad60ea2b60ea7ebd346be987f4909ac8",
+  "test_evaluated": true,
+  "refitted": false,
+  "evaluated_at_utc": "20261007T073952_132486Z",
+  "positive_class": "yes=1",
+  "confusion_matrix_order": [
+    "no",
+    "yes"
+  ],
+  "prediction_rule": "estimator.predict; probability ties select class 0",
+  "versions": {
+    "python": "3.10.1",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "joblib": "1.6.0"
+  }
+}
