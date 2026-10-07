@@ -1,0 +1,8 @@
+{
+  "model__min_samples_split": 2,
+  "model__min_samples_leaf": 20,
+  "model__max_depth": 8,
+  "model__criterion": "gini",
+  "model__class_weight": null,
+  "model__ccp_alpha": 0.0
+}

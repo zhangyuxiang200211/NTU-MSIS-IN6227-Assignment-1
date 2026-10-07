@@ -1,0 +1,5 @@
+variant,mean_ap_across_models
+baseline,0.672856195205433
+reduced,0.6721952452623197
+engineered,0.6722418831247217
+reduced_engineered,0.6729227028468543
